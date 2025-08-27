@@ -1,49 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - DevelopFilm</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #333;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy – DevelopFilm</title>
+  <style>
+    :root {
+      --fg: #111;
+      --muted: #555;
+      --accent: #ff8a00; /* orange */
+      --cyan: #06b6d4;
+      --bg: #fff;
+      --card: #fafafa;
+      --border: #e8e8e8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg:#eee; --muted:#aaa; --bg:#0b0b0b; --card:#121212; --border:#242424; }
+    }
+    body { margin:0; font: 16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif; color:var(--fg); background:var(--bg); }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 28px 18px 56px; }
+    h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+    h2 { margin-top: 2.0rem; font-size: 1.25rem; }
+    p, ul { margin: 0.5rem 0 0.9rem; }
+    small, .muted { color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    .pill { display:inline-block; font-size:.75rem; padding:3px 8px; border:1px solid var(--border); border-radius:999px; color:var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border:0; border-top:1px solid var(--border); margin: 1.75rem 0; }
+    .grid { display:grid; gap:12px; grid-template-columns: 1fr; }
+    @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+    footer { margin-top: 2rem; font-size: .9rem; color: var(--muted); }
+    .badge { color:#fff; background:linear-gradient(90deg,var(--accent),var(--cyan)); padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: .8rem; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 0 4px; background: var(--border); border-radius: 4px; }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: February 2025</p>
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+      <h1 style="margin-right:.5rem;">Privacy Policy</h1>
+      <span class="badge">DevelopFilm</span>
+    </div>
+    <p class="muted">Last updated: <strong>February 2025</strong></p>
 
-    <p>This Privacy Policy explains how the <strong>DevelopFilm</strong> app handles user data.</p>
+    <p>This Privacy Policy explains how the <strong>DevelopFilm</strong> iOS app and this website handle your information.</p>
 
-    <h2>Data Collection</h2>
-    <p>DevelopFilm does not collect, store, or share any personal data. All data you enter, such as journal entries, is stored locally on your device and never transmitted to any server.</p>
+    <h2>Summary</h2>
+    <div class="card">
+      <ul>
+        <li><strong>No account, no analytics, no ads.</strong></li>
+        <li><strong>Journal data and photos stay on your device.</strong> They are not uploaded to our servers.</li>
+        <li><strong>Payments are processed by Apple.</strong> We don’t receive your card details.</li>
+        <li><strong>Contact-only data.</strong> If you email us, we use your email solely to reply and support you.</li>
+      </ul>
+    </div>
 
-    <h2>Third-Party Services</h2>
-    <p>The app does not use analytics, advertisements, or any third-party tracking tools.</p>
+    <h2>Data We Process</h2>
+    <ul>
+      <li><strong>App data (on-device only):</strong> journal entries, development settings, and photos are stored locally on your iPhone/iPad. We do not collect or receive this content.</li>
+      <li><strong>Purchase data:</strong> Apple (App Store / StoreKit) provides us with non-sensitive transaction status (e.g., active subscription). We do not receive full payment details.</li>
+      <li><strong>Support emails:</strong> if you contact us, we process your email and contents to respond.</li>
+    </ul>
 
-    <h2>Internet Access</h2>
-    <p>DevelopFilm does not require an internet connection for normal operation. All features work fully offline.</p>
+    <h2>Do You Share or Sell Data?</h2>
+    <p>No. We don’t sell personal data. We don’t share it with advertisers or data brokers.</p>
 
-    <h2>Data Security</h2>
-    <p>Because your data remains entirely on your device, its security depends on your device’s security measures (e.g., passcode, Face ID, Touch ID).</p>
+    <h2>Legal Bases (GDPR/EEA/UK)</h2>
+    <ul>
+      <li><strong>Contract / Legitimate Interests:</strong> responding to support requests; validating purchases and providing subscription features.</li>
+      <li><strong>Legal Obligation:</strong> retaining purchase records we must keep for tax/accounting (from Apple’s settlement info).</li>
+    </ul>
+
+    <h2>Retention</h2>
+    <ul>
+      <li><strong>On-device journal data:</strong> remains until you delete the app or remove entries/photos within the app.</li>
+      <li><strong>Support emails:</strong> kept as long as reasonably necessary to resolve and document support matters.</li>
+      <li><strong>Purchase records:</strong> retained per statutory accounting/tax requirements.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Because data is stored locally, your device’s own protections (passcode/Face ID/Touch ID, iOS sandboxing, backups) are key. We do not run any backend server for your content.</p>
+
+    <h2>Children’s Privacy</h2>
+    <p>DevelopFilm is not directed to children under 13 (or the minimum age in your country where parental consent is required). We do not knowingly collect data from children.</p>
+
+    <h2>International Transfers</h2>
+    <p>We are based in Germany. If you email us or purchase via Apple, your data may be processed in the EU and by Apple entities globally. Apple’s processing is covered by Apple’s own terms and policies.</p>
+
+    <h2>Your Rights</h2>
+    <div class="grid">
+      <div class="card">
+        <p><strong>EEA/UK/CH (GDPR):</strong> You can request access, correction, deletion (where applicable), portability, and object/restrict processing. To exercise rights about App Store data, you may also use your Apple privacy portal.</p>
+      </div>
+      <div class="card">
+        <p><strong>California (CPRA):</strong> We do not “sell” or “share” your data as defined by CPRA. You can request access/deletion for any support correspondence we hold.</p>
+      </div>
+    </div>
+    <p>To exercise rights related to information we hold (e.g., your support emails), contact us (see “Contact”). We will respond as required by law.</p>
+
+    <h2>Payments & Subscriptions</h2>
+    <ul>
+      <li>In-app purchases and subscriptions are handled by Apple. We do not receive your full payment card information.</li>
+      <li>Apple may share limited transaction metadata (e.g., if a subscription is active) so the app can unlock features.</li>
+      <li>Billing issues and refunds are administered by Apple per App Store terms.</li>
+    </ul>
+
+    <h2>Cookies/Tracking</h2>
+    <p>We don’t use cookies or analytics on this site, and the app has no third-party trackers.</p>
+
+    <h2>Links to Other Sites</h2>
+    <p>Links we provide (e.g., Apple sites) are governed by their respective policies.</p>
+
+    <h2>DSA (EU) Trader Information</h2>
+    <div class="card">
+      <p><strong>Trader:</strong> Aleksandrs Bertulis</p>
+      <p><strong>Address:</strong> Dehnhaide 153, 22081 Hamburg, Germany</p>
+      <p><strong>Email:</strong> <span id="em">aleksandrs [dot] bertulis [at] gmail [dot] com</span></p>
+      <p class="muted">This contact is displayed for EU Digital Services Act compliance.</p>
+    </div>
+
+    <h2>Controller</h2>
+    <p><strong>Data Controller:</strong> Aleksandrs Bertulis, Dehnhaide 153, 22081 Hamburg, Germany.</p>
 
     <h2>Changes to This Policy</h2>
-    <p>If the Privacy Policy changes in the future, this page will be updated accordingly.</p>
+    <p>We may update this Privacy Policy. We’ll revise the “Last updated” date and, if material, may notify users in-app or via the App Store listing.</p>
 
     <h2>Contact</h2>
-    <p>If you have any questions about this Privacy Policy, contact us at: aleksandrs [dot] bertulis [at] gmail [dot] com</p>
+    <p>Questions or rights requests:</p>
+    <ul>
+      <li><strong>Email:</strong> <span id="em2">aleksandrs [dot] bertulis [at] gmail [dot] com</span></li>
+      <li><strong>Postal:</strong> Aleksandrs Bertulis, Dehnhaide 153, 22081 Hamburg, Germany</li>
+    </ul>
 
-    <hr>
-    <footer>
-        <p>© 2025 Aleksandrs Bertulis. All rights reserved.</p>
-    </footer>
+    <hr />
+    <footer>© 2025 Aleksandrs Bertulis. All rights reserved.</footer>
+  </div>
 </body>
 </html>
